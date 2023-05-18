@@ -6,46 +6,31 @@ on:
        - main
 
 jobs:
-  build:
-#   job_1:
-#     build:
-#       name: Checkout repository
+  myjob:
       runs-on: ubuntu-latest
       
       steps:
           - name: Checkout repository
-            uses: actions/checkout@v2
-          
-          - name: Create Message File
             run: |
                   echo "Devops is Fun! Do you agree? " > messages.txt
-                  git config --Local user.email "actions@github.com"
-                  git config --Local user.name "GitHub Actions"
-                  git add messages.txt
-                  git commit -m "Added Messages.txt file"
-                  git push
-      # - name: <step 2>
-      #   run: |
-      #     <commands>
-  print_working_directory:
-           runs-on: ubuntu-latest
+          - name: Multi line step
+            run: |
+              pwd
+              cat messages.txt
+              echo "This is my message"
+#   print_working_directory:
+#            runs-on: ubuntu-latest
            
-           steps:
-              - name: print current working directory
-                uses: actions/checkout@v2
-                
-              - name: Print Current Working Directory
-                run: pwd
+#            steps:
+#               - name: print current working directory
+#                 run: pwd
                    
-  display_message_content:
-            runs-on: ubuntu-latest
+#   display_message_content:
+#             runs-on: ubuntu-latest
             
-            steps:
-               - name: checkout repository
-                 uses: actions/checkout@v2
-                 
-               - name: Display Message Content
-                 run: cat messages.txt
+#             steps:
+#                - name: checkout repository
+#                  run: cat messages.txt
       # - name: <step 2>
       #   run: |
       #     <commands>
