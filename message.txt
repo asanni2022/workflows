@@ -1,0 +1,59 @@
+ 1703  brewARM install gh
+ 1704  mkdir gittest
+ 1705  cd gittest
+ 1706  gh auth login
+ 1707  gh repo create gitrepo --public
+ 1708  gh repo clone 
+ 1709  gh repo clone asanni2022/gitrepo
+ 1710  cd gitrepo
+ 1711  touch test.txt
+ 1712  git add .
+ 1713  git commit -m "updated"
+ 1714  git push
+ 1718  touch name.txt
+ 1719  touch devops.txt
+ 1720  git add .
+ 1721  git commit -m "updated files"
+ 1722  git push
+ 1725  cd devops-repo
+ 1728  cd devops-repo
+ 1729  cd alpha_platoon
+ 1734  cd DevOps_Training
+ 1737  cd devops-repo
+ 1738  cd alpha_platoon
+ 1739  git clone https://github.com/codeplatoon-devops/git-playground
+ 1741  cd git-playground
+ 1744  touch akimtest.md
+ 1745  nano akimtest.md
+ 1746  git pull
+ 1747  git add .
+ 1748  git commit -m "added md file"
+ 1749  git push
+ 1751  cat akimtest.md
+ 1752  nano gitsetupcode.txt
+ 1753  cat gitsetupcode.txt
+ 1755  git add .
+ 1756  git commit -m "added md file"
+ 1757  git push
+ 1759  git status
+ 1760* git push
+ 1761  git pull
+ 1764  git switch master
+ 1765  git switch main
+ 1766  git pull
+ 1767  git branch -a
+ 1768  git merge main
+ 1769  git pull
+ 1772* gh repo clone asanni2022/workflows
+ 1773* cd workflows
+➜  ~   git status
+ 1760* git push
+ 1761  git pull
+ 1764  git switch master
+ 1765  git switch main
+ 1766  git pull
+ 1767  git branch -a
+ 1768  git merge main
+ 1769  git pull
+ 1772* gh repo clone asanni2022/workflows
+ 1773* cd workflows
