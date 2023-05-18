@@ -18,11 +18,11 @@ jobs:
           
           - name: Create Message File
             run: |
-                  echo "Devops is Fun! Do you agree? " > message.txt
+                  echo "Devops is Fun! Do you agree? " > messages.txt
                   git config --Local user.email "actions@github.com"
                   git config --Local user.name "GitHub Actions"
-                  git add message.txt
-                  git commit -m "Added Message.txt file"
+                  git add messages.txt
+                  git commit -m "Added Messages.txt file"
                   git push
       # - name: <step 2>
       #   run: |
@@ -35,8 +35,7 @@ jobs:
                 uses: actions/checkout@v2
                 
               - name: Print Current Working Directory
-                run: |
-                   pwd
+                run: pwd
                    
   display_message_content:
             runs-on: ubuntu-latest
@@ -46,7 +45,7 @@ jobs:
                  uses: actions/checkout@v2
                  
                - name: Display Message Content
-                 run: cat message.txt
+                 run: cat messages.txt
       # - name: <step 2>
       #   run: |
       #     <commands>
