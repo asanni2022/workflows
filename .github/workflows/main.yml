@@ -6,7 +6,7 @@ on:
        - main
 
 jobs:
-  create_message:
+  build:
 #   job_1:
 #     build:
 #       name: Checkout repository
