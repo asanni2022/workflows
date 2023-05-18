@@ -1,0 +1,36 @@
+name: mydevopsgitaction
+
+on: 
+   push:
+     branches: 
+       - main
+
+jobs:
+#   job_1:
+    build:
+#       name: Checkout repository
+      runs-on: ubuntu-latest
+      steps:
+          - name: Checkout repository
+          
+          - name: Create Message File
+            run: |
+                  echo "Devops is Fun"
+                  git config --Local user.email "actions@github.com"
+                  git config --Local user.name "GitHub Actions"
+                  git add message.txt
+                  git commit -m "Added Message.txt file"
+                  git push
+      # - name: <step 2>
+      #   run: |
+      #     <commands>
+    job_2:
+       name: Checkout repository
+       runs-on: ubuntu-latest
+       steps:
+         - name: print current working directory
+           run: |
+               pwd
+      # - name: <step 2>
+      #   run: |
+      #     <commands>
